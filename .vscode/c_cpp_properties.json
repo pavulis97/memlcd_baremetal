@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "memlcd_baremetal",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/pmaksimkin/SimplicityStudio/SDKs/gecko_sdk_3/**"
+            ],
+            "defines": [
+                "DEBUG_EFM=1",
+                "EFR32ZG23B020F512IM48=1",
+                "SL_BOARD_NAME='BRD4210A'",
+                "SL_BOARD_REV='A01'",
+                "HARDWARE_BOARD_DEFAULT_RF_BAND_868=1",
+                "HARDWARE_BOARD_SUPPORTS_2_RF_BANDS=1",
+                "HARDWARE_BOARD_SUPPORTS_RF_BAND_868=1",
+                "HARDWARE_BOARD_SUPPORTS_RF_BAND_915=1",
+                "SL_COMPONENT_CATALOG_PRESENT=1"
+            ],
+            "compilerPath": "/Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/arm-none-eabi-gcc"
+        }
+    ],
+    "version": 4
+}
