@@ -38,16 +38,51 @@
 #define LCD_MAX_LINES      127
 #endif
 
+#ifndef LINE_LENGTH
+#define LINE_LENGTH         127
+#endif
+
+#ifndef SPACING_AFTER_STRING
+#define SPACING_AFTER_STRING         2
+#endif
+
+#ifndef FONT_HEIGHT
+#define FONT_HEIGHT         8
+#endif
+
+#ifndef STRING_Y_OFFSET
+#define STRING_Y_OFFSET         0
+#endif
+
+#ifndef SPACING_AFTER_LINE
+#define SPACING_AFTER_LINE         1
+#endif
+
+
+
 /*******************************************************************************
  ***************************  LOCAL VARIABLES   ********************************
  ******************************************************************************/
 static GLIB_Context_t glibContext;
-static int currentHLine = 0;
+static int currentHLine             = 0;
+static int currentVLine             = 0;
+static int horizontalLineCounter    = 0;
+static int stringCounter            = 0;
+static bool bootScreen              = true;
+
+typedef enum {
+  HORIZONTAL_LINE,
+  STRING
+} LAST_LINE_STATUS;
+
+LAST_LINE_STATUS lastLineStatus;
 
 /*******************************************************************************
  **************************   GLOBAL FUNCTIONS   *******************************
  ******************************************************************************/
-
+static void reset_counters(void);
+static void draw_line(void);
+static void draw_string(void);
 /***************************************************************************//**
  * Initialize example.
  ******************************************************************************/
@@ -81,23 +116,30 @@ void memlcd_app_init(void)
                         "MEMLCD Sample App",
                         currentHLine++,
                         GLIB_ALIGN_LEFT,
-                        5,
-                        5,
+                        0,
+                        STRING_Y_OFFSET,
                         true);
+  stringCounter++;
+
   GLIB_drawStringOnLine(&glibContext,
                         " Press BTN0 to clear",
                         currentHLine++,
                         GLIB_ALIGN_LEFT,
-                        5,
-                        5,
+                        0,
+                        STRING_Y_OFFSET,
                         true);
+  stringCounter++;
+
   GLIB_drawStringOnLine(&glibContext,
                         " Press BTN1 to print",
-                        currentHLine++,
+                        currentHLine,
                         GLIB_ALIGN_LEFT,
-                        5,
-                        5,
+                        0,
+                        STRING_Y_OFFSET,
                         true);
+  stringCounter++;
+
+  lastLineStatus = STRING;
 
   DMD_updateDisplay();
 }
@@ -121,25 +163,56 @@ void sl_button_on_change(const sl_button_t *handle)
 {
   if (sl_button_get_state(handle) == SL_SIMPLE_BUTTON_PRESSED) {
     if (&BUTTON_INSTANCE_0 == handle) {
-      currentHLine = 0;
+      reset_counters();
+      lastLineStatus = HORIZONTAL_LINE;
+
       GLIB_clear(&glibContext);
     } else if (&BUTTON_INSTANCE_1 == handle) {
       if (currentHLine > LCD_MAX_LINES) {
         currentHLine = 0;
+        reset_counters();
         GLIB_clear(&glibContext);
       }
 
-      GLIB_drawLineH(&glibContext, 0, currentHLine, 10);
-      currentHLine += 8;
-
-      /*GLIB_drawStringOnLine(&glibContext,
-                            "Hello World!",
-                            currentHLine++,
-                            GLIB_ALIGN_LEFT,
-                            5,
-                            5,
-                            true);*/
+      if (lastLineStatus == STRING) {
+        draw_line();
+      } else if (lastLineStatus == HORIZONTAL_LINE) {
+        draw_string();
+      }
     }
     DMD_updateDisplay();
   }
+}
+
+void reset_counters(void)
+{
+      currentHLine            = 0;
+      stringCounter           = 0;
+      horizontalLineCounter   = 0;
+}
+
+void draw_line(void)
+{
+  currentHLine    = stringCounter * FONT_HEIGHT + SPACING_AFTER_STRING * horizontalLineCounter;
+  
+  GLIB_drawLineH(&glibContext, 0, currentHLine, LINE_LENGTH);
+  lastLineStatus  = HORIZONTAL_LINE;
+
+  horizontalLineCounter++;
+}
+
+void draw_string(void)
+{
+
+  currentHLine = currentHLine - (stringCounter * FONT_HEIGHT) + stringCounter - SPACING_AFTER_STRING * horizontalLineCounter;
+
+  GLIB_drawStringOnLine(&glibContext,
+                          "Hello World!",
+                          currentHLine,
+                          GLIB_ALIGN_LEFT,
+                          0,
+                          STRING_Y_OFFSET,
+                          true);
+  stringCounter++;
+  lastLineStatus = STRING;
 }
