@@ -35,14 +35,14 @@
 #endif
 
 #ifndef LCD_MAX_LINES
-#define LCD_MAX_LINES      11
+#define LCD_MAX_LINES      127
 #endif
 
 /*******************************************************************************
  ***************************  LOCAL VARIABLES   ********************************
  ******************************************************************************/
 static GLIB_Context_t glibContext;
-static int currentLine = 0;
+static int currentHLine = 0;
 
 /*******************************************************************************
  **************************   GLOBAL FUNCTIONS   *******************************
@@ -79,21 +79,21 @@ void memlcd_app_init(void)
   /* Draw text on the memory lcd display*/
   GLIB_drawStringOnLine(&glibContext,
                         "MEMLCD Sample App",
-                        currentLine++,
+                        currentHLine++,
                         GLIB_ALIGN_LEFT,
                         5,
                         5,
                         true);
   GLIB_drawStringOnLine(&glibContext,
                         " Press BTN0 to clear",
-                        currentLine++,
+                        currentHLine++,
                         GLIB_ALIGN_LEFT,
                         5,
                         5,
                         true);
   GLIB_drawStringOnLine(&glibContext,
                         " Press BTN1 to print",
-                        currentLine++,
+                        currentHLine++,
                         GLIB_ALIGN_LEFT,
                         5,
                         5,
@@ -121,20 +121,24 @@ void sl_button_on_change(const sl_button_t *handle)
 {
   if (sl_button_get_state(handle) == SL_SIMPLE_BUTTON_PRESSED) {
     if (&BUTTON_INSTANCE_0 == handle) {
-      currentLine = 0;
+      currentHLine = 0;
       GLIB_clear(&glibContext);
     } else if (&BUTTON_INSTANCE_1 == handle) {
-      if (currentLine > LCD_MAX_LINES) {
-        currentLine = 0;
+      if (currentHLine > LCD_MAX_LINES) {
+        currentHLine = 0;
         GLIB_clear(&glibContext);
       }
-      GLIB_drawStringOnLine(&glibContext,
+
+      GLIB_drawLineH(&glibContext, 0, currentHLine, 10);
+      currentHLine += 8;
+
+      /*GLIB_drawStringOnLine(&glibContext,
                             "Hello World!",
-                            currentLine++,
+                            currentHLine++,
                             GLIB_ALIGN_LEFT,
                             5,
                             5,
-                            true);
+                            true);*/
     }
     DMD_updateDisplay();
   }
