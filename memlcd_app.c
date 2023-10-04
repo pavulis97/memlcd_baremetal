@@ -203,8 +203,11 @@ void draw_line(void)
 
 void draw_string(void)
 {
+  if (currentHLine == 0){
 
-  currentHLine = currentHLine - (stringCounter * FONT_HEIGHT) + stringCounter - SPACING_AFTER_STRING * horizontalLineCounter;
+  } else {
+    currentHLine = 2 + currentHLine - (stringCounter * FONT_HEIGHT) + stringCounter - SPACING_AFTER_STRING * horizontalLineCounter;
+  }
 
   GLIB_drawStringOnLine(&glibContext,
                           "Hello World!",

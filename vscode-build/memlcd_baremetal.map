@@ -968,7 +968,7 @@ END GROUP
 LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtend.o
 LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtn.o
 
-.text           0x0000000008000000     0x45a0
+.text           0x0000000008000000     0x45a8
                 0x0000000008000000                linker_vectors_begin = .
  *(.vectors)
  .vectors       0x0000000008000000      0x170 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/startup_efr32zg23.o
@@ -1321,330 +1321,330 @@ LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/g
                 0x0000000008002e8c       0xe0 vscode-build/obj/memlcd_app.o
                 0x0000000008002e8c                memlcd_app_init
  .text.sl_button_on_change
-                0x0000000008002f6c       0xdc vscode-build/obj/memlcd_app.o
+                0x0000000008002f6c       0xe4 vscode-build/obj/memlcd_app.o
                 0x0000000008002f6c                sl_button_on_change
- .text          0x0000000008003048       0x30 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_aeabi_uldivmod.o)
-                0x0000000008003048                __aeabi_uldivmod
- .text          0x0000000008003078      0x2ec /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x0000000008003078                __udivmoddi4
- .text          0x0000000008003364        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_dvmd_tls.o)
-                0x0000000008003364                __aeabi_ldiv0
-                0x0000000008003364                __aeabi_idiv0
- .text.exit     0x0000000008003368       0x28 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-exit.o)
-                0x0000000008003368                exit
+ .text          0x0000000008003050       0x30 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000008003050                __aeabi_uldivmod
+ .text          0x0000000008003080      0x2ec /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x0000000008003080                __udivmoddi4
+ .text          0x000000000800336c        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x000000000800336c                __aeabi_ldiv0
+                0x000000000800336c                __aeabi_idiv0
+ .text.exit     0x0000000008003370       0x28 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-exit.o)
+                0x0000000008003370                exit
  .text.__libc_init_array
-                0x0000000008003390       0x48 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-init.o)
-                0x0000000008003390                __libc_init_array
- .text._exit    0x00000000080033d8        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libnosys.a(_exit.o)
-                0x00000000080033d8                _exit
+                0x0000000008003398       0x48 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-init.o)
+                0x0000000008003398                __libc_init_array
+ .text._exit    0x00000000080033e0        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libnosys.a(_exit.o)
+                0x00000000080033e0                _exit
  .text.app_init
-                0x00000000080033dc        0x4 vscode-build/obj/app.o
-                0x00000000080033dc                app_init
+                0x00000000080033e4        0x4 vscode-build/obj/app.o
+                0x00000000080033e4                app_init
  .text.app_process_action
-                0x00000000080033e0        0x4 vscode-build/obj/app.o
-                0x00000000080033e0                app_process_action
+                0x00000000080033e8        0x4 vscode-build/obj/app.o
+                0x00000000080033e8                app_process_action
  .text.sl_board_default_init
-                0x00000000080033e4        0x4 vscode-build/obj/autogen/sl_board_default_init.o
-                0x00000000080033e4                sl_board_default_init
+                0x00000000080033ec        0x4 vscode-build/obj/autogen/sl_board_default_init.o
+                0x00000000080033ec                sl_board_default_init
  .text.sl_driver_init
-                0x00000000080033e8       0x16 vscode-build/obj/autogen/sl_event_handler.o
-                0x00000000080033e8                sl_driver_init
+                0x00000000080033f0       0x16 vscode-build/obj/autogen/sl_event_handler.o
+                0x00000000080033f0                sl_driver_init
  .text.sl_service_init
-                0x00000000080033fe        0xe vscode-build/obj/autogen/sl_event_handler.o
-                0x00000000080033fe                sl_service_init
+                0x0000000008003406        0xe vscode-build/obj/autogen/sl_event_handler.o
+                0x0000000008003406                sl_service_init
  .text.sl_stack_init
-                0x000000000800340c        0x2 vscode-build/obj/autogen/sl_event_handler.o
-                0x000000000800340c                sl_stack_init
- .text.sl_internal_app_init
-                0x000000000800340e        0x2 vscode-build/obj/autogen/sl_event_handler.o
-                0x000000000800340e                sl_internal_app_init
- .text.sl_platform_process_action
-                0x0000000008003410        0x2 vscode-build/obj/autogen/sl_event_handler.o
-                0x0000000008003410                sl_platform_process_action
- .text.sl_service_process_action
-                0x0000000008003412        0x2 vscode-build/obj/autogen/sl_event_handler.o
-                0x0000000008003412                sl_service_process_action
- .text.sl_stack_process_action
                 0x0000000008003414        0x2 vscode-build/obj/autogen/sl_event_handler.o
-                0x0000000008003414                sl_stack_process_action
- .text.sl_internal_app_process_action
+                0x0000000008003414                sl_stack_init
+ .text.sl_internal_app_init
                 0x0000000008003416        0x2 vscode-build/obj/autogen/sl_event_handler.o
-                0x0000000008003416                sl_internal_app_process_action
+                0x0000000008003416                sl_internal_app_init
+ .text.sl_platform_process_action
+                0x0000000008003418        0x2 vscode-build/obj/autogen/sl_event_handler.o
+                0x0000000008003418                sl_platform_process_action
+ .text.sl_service_process_action
+                0x000000000800341a        0x2 vscode-build/obj/autogen/sl_event_handler.o
+                0x000000000800341a                sl_service_process_action
+ .text.sl_stack_process_action
+                0x000000000800341c        0x2 vscode-build/obj/autogen/sl_event_handler.o
+                0x000000000800341c                sl_stack_process_action
+ .text.sl_internal_app_process_action
+                0x000000000800341e        0x2 vscode-build/obj/autogen/sl_event_handler.o
+                0x000000000800341e                sl_internal_app_process_action
  .text.sl_board_configure_vcom
-                0x0000000008003418        0x4 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_control_gpio.o
-                0x0000000008003418                sl_board_configure_vcom
+                0x0000000008003420        0x4 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_control_gpio.o
+                0x0000000008003420                sl_board_configure_vcom
  .text.sl_board_disable_vcom
-                0x000000000800341c       0x12 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_control_gpio.o
-                0x000000000800341c                sl_board_disable_vcom
+                0x0000000008003424       0x12 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_control_gpio.o
+                0x0000000008003424                sl_board_disable_vcom
  .text.sl_board_enable_display
-                0x000000000800342e       0x12 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_control_gpio.o
-                0x000000000800342e                sl_board_enable_display
+                0x0000000008003436       0x12 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_control_gpio.o
+                0x0000000008003436                sl_board_enable_display
  .text.sl_board_init
-                0x0000000008003440       0x16 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_init.o
-                0x0000000008003440                sl_board_init
+                0x0000000008003448       0x16 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_init.o
+                0x0000000008003448                sl_board_init
  .text.sl_board_preinit
-                0x0000000008003456        0x8 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_init.o
-                0x0000000008003456                sl_board_preinit
+                0x000000000800345e        0x8 vscode-build/obj/gecko_sdk_4.3.1/hardware/board/src/sl_board_init.o
+                0x000000000800345e                sl_board_preinit
  .text.sl_cos_send_config
-                0x000000000800345e       0x12 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/configuration_over_swo/src/sl_cos.o
-                0x000000000800345e                sl_cos_send_config
+                0x0000000008003466       0x12 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/configuration_over_swo/src/sl_cos.o
+                0x0000000008003466                sl_cos_send_config
  .text.sli_memlcd_spi_tx
-                0x0000000008003470       0x22 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
-                0x0000000008003470                sli_memlcd_spi_tx
+                0x0000000008003478       0x22 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
+                0x0000000008003478                sli_memlcd_spi_tx
  .text.sli_memlcd_spi_wait
-                0x0000000008003492        0xa vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
-                0x0000000008003492                sli_memlcd_spi_wait
+                0x000000000800349a        0xa vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
+                0x000000000800349a                sli_memlcd_spi_wait
  .text.sli_memlcd_spi_rx_flush
-                0x000000000800349c       0x14 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
-                0x000000000800349c                sli_memlcd_spi_rx_flush
+                0x00000000080034a4       0x14 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
+                0x00000000080034a4                sli_memlcd_spi_rx_flush
  .text.Default_Handler
-                0x00000000080034b0        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/startup_efr32zg23.o
-                0x00000000080034b0                MPAHBRAM_IRQHandler
-                0x00000000080034b0                SW2_IRQHandler
-                0x00000000080034b0                TIMER2_IRQHandler
-                0x00000000080034b0                DebugMon_Handler
-                0x00000000080034b0                USART0_TX_IRQHandler
-                0x00000000080034b0                IADC_IRQHandler
-                0x00000000080034b0                EUSART0_TX_IRQHandler
-                0x00000000080034b0                I2C0_IRQHandler
-                0x00000000080034b0                LFXO_IRQHandler
-                0x00000000080034b0                VDAC_IRQHandler
-                0x00000000080034b0                HardFault_Handler
-                0x00000000080034b0                SMU_SECURE_IRQHandler
-                0x00000000080034b0                SysTick_Handler
-                0x00000000080034b0                SYSRTC_SEQ_IRQHandler
-                0x00000000080034b0                EMUEFP_IRQHandler
-                0x00000000080034b0                EUSART2_TX_IRQHandler
-                0x00000000080034b0                PendSV_Handler
-                0x00000000080034b0                NMI_Handler
-                0x00000000080034b0                SYNTH_IRQHandler
-                0x00000000080034b0                HOSTMAILBOX_IRQHandler
-                0x00000000080034b0                HFXO0_IRQHandler
-                0x00000000080034b0                I2C1_IRQHandler
-                0x00000000080034b0                WDOG0_IRQHandler
-                0x00000000080034b0                TIMER3_IRQHandler
-                0x00000000080034b0                SYSCFG_IRQHandler
-                0x00000000080034b0                RFECA1_IRQHandler
-                0x00000000080034b0                EMUDG_IRQHandler
-                0x00000000080034b0                MSC_IRQHandler
-                0x00000000080034b0                DPLL0_IRQHandler
-                0x00000000080034b0                UsageFault_Handler
-                0x00000000080034b0                WDOG1_IRQHandler
-                0x00000000080034b0                M33CTI1_IRQHandler
-                0x00000000080034b0                TIMER4_IRQHandler
-                0x00000000080034b0                LDMA_IRQHandler
-                0x00000000080034b0                SEMBTX_IRQHandler
-                0x00000000080034b0                SW0_IRQHandler
-                0x00000000080034b0                TIMER0_IRQHandler
-                0x00000000080034b0                LCD_IRQHandler
-                0x00000000080034b0                LETIMER0_IRQHandler
-                0x00000000080034b0                EUSART1_RX_IRQHandler
-                0x00000000080034b0                TIMER1_IRQHandler
-                0x00000000080034b0                HFRCO0_IRQHandler
-                0x00000000080034b0                SecureFault_Handler
-                0x00000000080034b0                BUFC_IRQHandler
-                0x00000000080034b0                DCDC_IRQHandler
-                0x00000000080034b0                MODEM_IRQHandler
-                0x00000000080034b0                Default_Handler
-                0x00000000080034b0                RAC_SEQ_IRQHandler
-                0x00000000080034b0                FRC_PRI_IRQHandler
-                0x00000000080034b0                EMU_IRQHandler
-                0x00000000080034b0                SW3_IRQHandler
-                0x00000000080034b0                KERNEL0_IRQHandler
-                0x00000000080034b0                FRC_IRQHandler
-                0x00000000080034b0                PCNT0_IRQHandler
-                0x00000000080034b0                KERNEL1_IRQHandler
-                0x00000000080034b0                AGC_IRQHandler
-                0x00000000080034b0                EUSART1_TX_IRQHandler
-                0x00000000080034b0                KEYSCAN_IRQHandler
-                0x00000000080034b0                sl_app_properties
-                0x00000000080034b0                HFRCOEM23_IRQHandler
-                0x00000000080034b0                BURTC_IRQHandler
-                0x00000000080034b0                SEMBRX_IRQHandler
-                0x00000000080034b0                RFECA0_IRQHandler
-                0x00000000080034b0                LFRCO_IRQHandler
-                0x00000000080034b0                ACMP0_IRQHandler
-                0x00000000080034b0                USART0_RX_IRQHandler
-                0x00000000080034b0                MemManage_Handler
-                0x00000000080034b0                SVC_Handler
-                0x00000000080034b0                EUSART2_RX_IRQHandler
-                0x00000000080034b0                SMU_S_PRIVILEGED_IRQHandler
-                0x00000000080034b0                SW1_IRQHandler
-                0x00000000080034b0                CMU_IRQHandler
-                0x00000000080034b0                EUSART0_RX_IRQHandler
-                0x00000000080034b0                RAC_RSM_IRQHandler
-                0x00000000080034b0                SETAMPERHOST_IRQHandler
-                0x00000000080034b0                LESENSE_IRQHandler
-                0x00000000080034b0                AES_IRQHandler
-                0x00000000080034b0                M33CTI0_IRQHandler
-                0x00000000080034b0                ICACHE0_IRQHandler
-                0x00000000080034b0                SMU_NS_PRIVILEGED_IRQHandler
-                0x00000000080034b0                FPUEXH_IRQHandler
-                0x00000000080034b0                PROTIMER_IRQHandler
-                0x00000000080034b0                ACMP1_IRQHandler
-                0x00000000080034b0                BusFault_Handler
-                0x00000000080034b0                ULFRCO_IRQHandler
+                0x00000000080034b8        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/startup_efr32zg23.o
+                0x00000000080034b8                MPAHBRAM_IRQHandler
+                0x00000000080034b8                SW2_IRQHandler
+                0x00000000080034b8                TIMER2_IRQHandler
+                0x00000000080034b8                DebugMon_Handler
+                0x00000000080034b8                USART0_TX_IRQHandler
+                0x00000000080034b8                IADC_IRQHandler
+                0x00000000080034b8                EUSART0_TX_IRQHandler
+                0x00000000080034b8                I2C0_IRQHandler
+                0x00000000080034b8                LFXO_IRQHandler
+                0x00000000080034b8                VDAC_IRQHandler
+                0x00000000080034b8                HardFault_Handler
+                0x00000000080034b8                SMU_SECURE_IRQHandler
+                0x00000000080034b8                SysTick_Handler
+                0x00000000080034b8                SYSRTC_SEQ_IRQHandler
+                0x00000000080034b8                EMUEFP_IRQHandler
+                0x00000000080034b8                EUSART2_TX_IRQHandler
+                0x00000000080034b8                PendSV_Handler
+                0x00000000080034b8                NMI_Handler
+                0x00000000080034b8                SYNTH_IRQHandler
+                0x00000000080034b8                HOSTMAILBOX_IRQHandler
+                0x00000000080034b8                HFXO0_IRQHandler
+                0x00000000080034b8                I2C1_IRQHandler
+                0x00000000080034b8                WDOG0_IRQHandler
+                0x00000000080034b8                TIMER3_IRQHandler
+                0x00000000080034b8                SYSCFG_IRQHandler
+                0x00000000080034b8                RFECA1_IRQHandler
+                0x00000000080034b8                EMUDG_IRQHandler
+                0x00000000080034b8                MSC_IRQHandler
+                0x00000000080034b8                DPLL0_IRQHandler
+                0x00000000080034b8                UsageFault_Handler
+                0x00000000080034b8                WDOG1_IRQHandler
+                0x00000000080034b8                M33CTI1_IRQHandler
+                0x00000000080034b8                TIMER4_IRQHandler
+                0x00000000080034b8                LDMA_IRQHandler
+                0x00000000080034b8                SEMBTX_IRQHandler
+                0x00000000080034b8                SW0_IRQHandler
+                0x00000000080034b8                TIMER0_IRQHandler
+                0x00000000080034b8                LCD_IRQHandler
+                0x00000000080034b8                LETIMER0_IRQHandler
+                0x00000000080034b8                EUSART1_RX_IRQHandler
+                0x00000000080034b8                TIMER1_IRQHandler
+                0x00000000080034b8                HFRCO0_IRQHandler
+                0x00000000080034b8                SecureFault_Handler
+                0x00000000080034b8                BUFC_IRQHandler
+                0x00000000080034b8                DCDC_IRQHandler
+                0x00000000080034b8                MODEM_IRQHandler
+                0x00000000080034b8                Default_Handler
+                0x00000000080034b8                RAC_SEQ_IRQHandler
+                0x00000000080034b8                FRC_PRI_IRQHandler
+                0x00000000080034b8                EMU_IRQHandler
+                0x00000000080034b8                SW3_IRQHandler
+                0x00000000080034b8                KERNEL0_IRQHandler
+                0x00000000080034b8                FRC_IRQHandler
+                0x00000000080034b8                PCNT0_IRQHandler
+                0x00000000080034b8                KERNEL1_IRQHandler
+                0x00000000080034b8                AGC_IRQHandler
+                0x00000000080034b8                EUSART1_TX_IRQHandler
+                0x00000000080034b8                KEYSCAN_IRQHandler
+                0x00000000080034b8                sl_app_properties
+                0x00000000080034b8                HFRCOEM23_IRQHandler
+                0x00000000080034b8                BURTC_IRQHandler
+                0x00000000080034b8                SEMBRX_IRQHandler
+                0x00000000080034b8                RFECA0_IRQHandler
+                0x00000000080034b8                LFRCO_IRQHandler
+                0x00000000080034b8                ACMP0_IRQHandler
+                0x00000000080034b8                USART0_RX_IRQHandler
+                0x00000000080034b8                MemManage_Handler
+                0x00000000080034b8                SVC_Handler
+                0x00000000080034b8                EUSART2_RX_IRQHandler
+                0x00000000080034b8                SMU_S_PRIVILEGED_IRQHandler
+                0x00000000080034b8                SW1_IRQHandler
+                0x00000000080034b8                CMU_IRQHandler
+                0x00000000080034b8                EUSART0_RX_IRQHandler
+                0x00000000080034b8                RAC_RSM_IRQHandler
+                0x00000000080034b8                SETAMPERHOST_IRQHandler
+                0x00000000080034b8                LESENSE_IRQHandler
+                0x00000000080034b8                AES_IRQHandler
+                0x00000000080034b8                M33CTI0_IRQHandler
+                0x00000000080034b8                ICACHE0_IRQHandler
+                0x00000000080034b8                SMU_NS_PRIVILEGED_IRQHandler
+                0x00000000080034b8                FPUEXH_IRQHandler
+                0x00000000080034b8                PROTIMER_IRQHandler
+                0x00000000080034b8                ACMP1_IRQHandler
+                0x00000000080034b8                BusFault_Handler
+                0x00000000080034b8                ULFRCO_IRQHandler
  .text.SystemCLKIN0Get
-                0x00000000080034b2        0x4 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/system_efr32zg23.o
-                0x00000000080034b2                SystemCLKIN0Get
+                0x00000000080034ba        0x4 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/system_efr32zg23.o
+                0x00000000080034ba                SystemCLKIN0Get
  .text.SystemLFRCOClockGet
-                0x00000000080034b6        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/system_efr32zg23.o
-                0x00000000080034b6                SystemLFRCOClockGet
+                0x00000000080034be        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/system_efr32zg23.o
+                0x00000000080034be                SystemLFRCOClockGet
  .text.SystemULFRCOClockGet
-                0x00000000080034bc        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/system_efr32zg23.o
-                0x00000000080034bc                SystemULFRCOClockGet
+                0x00000000080034c4        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/Device/SiliconLabs/EFR32ZG23/Source/system_efr32zg23.o
+                0x00000000080034c4                SystemULFRCOClockGet
  .text.assertEFM
-                0x00000000080034c2        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/common/src/sl_assert.o
-                0x00000000080034c2                assertEFM
+                0x00000000080034ca        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/common/src/sl_assert.o
+                0x00000000080034ca                assertEFM
  .text.sl_button_init
-                0x00000000080034c4        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_button.o
-                0x00000000080034c4                sl_button_init
+                0x00000000080034cc        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_button.o
+                0x00000000080034cc                sl_button_init
  .text.sl_button_get_state
-                0x00000000080034ce        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_button.o
-                0x00000000080034ce                sl_button_get_state
+                0x00000000080034d6        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_button.o
+                0x00000000080034d6                sl_button_get_state
  .text.sli_simple_button_on_change
-                0x00000000080034d8       0x28 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x00000000080034e0       0x28 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
  .text.sl_simple_button_get_state
-                0x0000000008003500        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
-                0x0000000008003500                sl_simple_button_get_state
+                0x0000000008003508        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x0000000008003508                sl_simple_button_get_state
  .text.sl_simple_button_poll_step
-                0x0000000008003506       0x52 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
-                0x0000000008003506                sl_simple_button_poll_step
+                0x000000000800350e       0x52 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x000000000800350e                sl_simple_button_poll_step
  .text.sl_simple_button_enable
-                0x0000000008003558       0x12 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
-                0x0000000008003558                sl_simple_button_enable
+                0x0000000008003560       0x12 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x0000000008003560                sl_simple_button_enable
  .text.sl_simple_button_disable
-                0x000000000800356a       0x30 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
-                0x000000000800356a                sl_simple_button_disable
+                0x0000000008003572       0x30 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x0000000008003572                sl_simple_button_disable
  .text.sl_debug_swo_enable_itm
-                0x000000000800359a       0x18 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/debug/src/sl_debug_swo.o
-                0x000000000800359a                sl_debug_swo_enable_itm
+                0x00000000080035a2       0x18 vscode-build/obj/gecko_sdk_4.3.1/platform/driver/debug/src/sl_debug_swo.o
+                0x00000000080035a2                sl_debug_swo_enable_itm
  .text.sl_debug_swo_disable_itm
-                0x00000000080035b2       0x1a vscode-build/obj/gecko_sdk_4.3.1/platform/driver/debug/src/sl_debug_swo.o
-                0x00000000080035b2                sl_debug_swo_disable_itm
+                0x00000000080035ba       0x1a vscode-build/obj/gecko_sdk_4.3.1/platform/driver/debug/src/sl_debug_swo.o
+                0x00000000080035ba                sl_debug_swo_disable_itm
  .text.BUS_RegMaskedWrite
-                0x00000000080035cc       0x22 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
+                0x00000000080035d4       0x22 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
  .text.waitStateMax
-                0x00000000080035ee       0x10 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
+                0x00000000080035f6       0x10 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
  .text.CMU_UpdateWaitStates
-                0x00000000080035fe        0xc vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
-                0x00000000080035fe                CMU_UpdateWaitStates
+                0x0000000008003606        0xc vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
+                0x0000000008003606                CMU_UpdateWaitStates
  .text.pclkDivMax
-                0x000000000800360a        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
+                0x0000000008003612        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
  .text.sli_em_cmu_SYSCLKInitPostClockSelect
-                0x0000000008003614       0x2a vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
-                0x0000000008003614                sli_em_cmu_SYSCLKInitPostClockSelect
+                0x000000000800361c       0x2a vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
+                0x000000000800361c                sli_em_cmu_SYSCLKInitPostClockSelect
  .text.CORE_EnterCritical
-                0x000000000800363e        0x8 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
-                0x000000000800363e                CORE_EnterCritical
+                0x0000000008003646        0x8 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
+                0x0000000008003646                CORE_EnterCritical
  .text.CORE_ExitCritical
-                0x0000000008003646        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
-                0x0000000008003646                CORE_ExitCritical
+                0x000000000800364e        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
+                0x000000000800364e                CORE_ExitCritical
  .text.CORE_EnterAtomic
-                0x000000000800364c        0xc vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
-                0x000000000800364c                CORE_EnterAtomic
+                0x0000000008003654        0xc vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
+                0x0000000008003654                CORE_EnterAtomic
  .text.CORE_ExitAtomic
-                0x0000000008003658        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
-                0x0000000008003658                CORE_ExitAtomic
+                0x0000000008003660        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
+                0x0000000008003660                CORE_ExitAtomic
  .text.EMU_EFPEM01VScale
-                0x000000000800365e        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_emu.o
-                0x000000000800365e                EMU_EFPEM01VScale
+                0x0000000008003666        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_emu.o
+                0x0000000008003666                EMU_EFPEM01VScale
  .text.EMU_DCDCUpdatedHook
-                0x0000000008003660        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_emu.o
-                0x0000000008003660                EMU_DCDCUpdatedHook
+                0x0000000008003668        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_emu.o
+                0x0000000008003668                EMU_DCDCUpdatedHook
  .text.BUS_RegMaskedWrite
-                0x0000000008003662       0x22 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
+                0x000000000800366a       0x22 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
  .text.GPIO_DbgLocationSet
-                0x0000000008003684        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
-                0x0000000008003684                GPIO_DbgLocationSet
+                0x000000000800368c        0x2 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
+                0x000000000800368c                GPIO_DbgLocationSet
  .text.USART_Rx
-                0x0000000008003686        0xc vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
-                0x0000000008003686                USART_Rx
+                0x000000000800368e        0xc vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
+                0x000000000800368e                USART_Rx
  .text.USART_SpiTransfer
-                0x0000000008003692       0x14 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
-                0x0000000008003692                USART_SpiTransfer
+                0x000000000800369a       0x14 vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
+                0x000000000800369a                USART_SpiTransfer
  .text.USART_Tx
-                0x00000000080036a6        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
-                0x00000000080036a6                USART_Tx
+                0x00000000080036ae        0xa vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
+                0x00000000080036ae                USART_Tx
  .text.GLIB_resetDisplayClippingArea
-                0x00000000080036b0       0x14 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x00000000080036b0                GLIB_resetDisplayClippingArea
+                0x00000000080036b8       0x14 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x00000000080036b8                GLIB_resetDisplayClippingArea
  .text.GLIB_clear
-                0x00000000080036c4       0x36 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x00000000080036c4                GLIB_clear
+                0x00000000080036cc       0x36 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x00000000080036cc                GLIB_clear
  .text.GLIB_applyClippingRegion
-                0x00000000080036fa       0x2a vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x00000000080036fa                GLIB_applyClippingRegion
+                0x0000000008003702       0x2a vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x0000000008003702                GLIB_applyClippingRegion
  .text.GLIB_setClippingRegion
-                0x0000000008003724       0x48 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x0000000008003724                GLIB_setClippingRegion
+                0x000000000800372c       0x48 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x000000000800372c                GLIB_setClippingRegion
  .text.GLIB_colorTranslate24bpp
-                0x000000000800376c        0xe vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x000000000800376c                GLIB_colorTranslate24bpp
+                0x0000000008003774        0xe vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x0000000008003774                GLIB_colorTranslate24bpp
  .text.GLIB_drawPixel
-                0x000000000800377a       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x000000000800377a                GLIB_drawPixel
+                0x0000000008003782       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x0000000008003782                GLIB_drawPixel
  .text.GLIB_drawPixelColor
-                0x00000000080037b2       0x36 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
-                0x00000000080037b2                GLIB_drawPixelColor
+                0x00000000080037ba       0x36 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib.o
+                0x00000000080037ba                GLIB_drawPixelColor
  .text.GLIB_drawLineH
-                0x00000000080037e8       0x96 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_line.o
-                0x00000000080037e8                GLIB_drawLineH
+                0x00000000080037f0       0x96 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_line.o
+                0x00000000080037f0                GLIB_drawLineH
  .text.GLIB_rectContainsPoint
-                0x000000000800387e       0x24 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_rectangle.o
-                0x000000000800387e                GLIB_rectContainsPoint
+                0x0000000008003886       0x24 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_rectangle.o
+                0x0000000008003886                GLIB_rectContainsPoint
  .text.GLIB_drawChar
-                0x00000000080038a2      0x120 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
-                0x00000000080038a2                GLIB_drawChar
+                0x00000000080038aa      0x120 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
+                0x00000000080038aa                GLIB_drawChar
  .text.GLIB_drawString
-                0x00000000080039c2       0x78 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
-                0x00000000080039c2                GLIB_drawString
+                0x00000000080039ca       0x78 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
+                0x00000000080039ca                GLIB_drawString
  .text.GLIB_setFont
-                0x0000000008003a3a       0x26 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
-                0x0000000008003a3a                GLIB_setFont
+                0x0000000008003a42       0x26 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
+                0x0000000008003a42                GLIB_setFont
  .text.GLIB_drawStringOnLine
-                0x0000000008003a60       0x62 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
-                0x0000000008003a60                GLIB_drawStringOnLine
+                0x0000000008003a68       0x62 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/glib/glib_string.o
+                0x0000000008003a68                GLIB_drawStringOnLine
  .text.sl_sleeptimer_restart_periodic_timer
-                0x0000000008003ac2       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer.o
-                0x0000000008003ac2                sl_sleeptimer_restart_periodic_timer
+                0x0000000008003aca       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer.o
+                0x0000000008003aca                sl_sleeptimer_restart_periodic_timer
  .text.sleeptimer_hal_get_compare
-                0x0000000008003afa        0x8 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
-                0x0000000008003afa                sleeptimer_hal_get_compare
+                0x0000000008003b02        0x8 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
+                0x0000000008003b02                sleeptimer_hal_get_compare
  .text.sleeptimer_hal_enable_int
-                0x0000000008003b02       0x12 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
-                0x0000000008003b02                sleeptimer_hal_enable_int
+                0x0000000008003b0a       0x12 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
+                0x0000000008003b0a                sleeptimer_hal_enable_int
  .text.SYSRTC_APP_IRQHandler
-                0x0000000008003b14       0x34 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
-                0x0000000008003b14                SYSRTC_APP_IRQHandler
+                0x0000000008003b1c       0x34 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
+                0x0000000008003b1c                SYSRTC_APP_IRQHandler
  .text.sleeptimer_hal_get_timer_frequency
-                0x0000000008003b48        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
-                0x0000000008003b48                sleeptimer_hal_get_timer_frequency
+                0x0000000008003b50        0x6 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
+                0x0000000008003b50                sleeptimer_hal_get_timer_frequency
  .text.sl_system_init
-                0x0000000008003b4e       0x1a vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_init.o
-                0x0000000008003b4e                sl_system_init
+                0x0000000008003b56       0x1a vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_init.o
+                0x0000000008003b56                sl_system_init
  .text.sl_system_process_action
-                0x0000000008003b68       0x16 vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_process_action.o
-                0x0000000008003b68                sl_system_process_action
+                0x0000000008003b70       0x16 vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_process_action.o
+                0x0000000008003b70                sl_system_process_action
  .text.startup.main
-                0x0000000008003b7e       0x14 vscode-build/obj/main.o
-                0x0000000008003b7e                main
+                0x0000000008003b86       0x14 vscode-build/obj/main.o
+                0x0000000008003b86                main
  .text.memlcd_app_process_action
-                0x0000000008003b92        0x2 vscode-build/obj/memlcd_app.o
-                0x0000000008003b92                memlcd_app_process_action
- .text.memset   0x0000000008003b94       0x10 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-memset.o)
-                0x0000000008003b94                memset
- .text          0x0000000008003ba4       0x10 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-strlen.o)
-                0x0000000008003ba4                strlen
-                0x0000000008003bb4                linker_code_end = .
+                0x0000000008003b9a        0x2 vscode-build/obj/memlcd_app.o
+                0x0000000008003b9a                memlcd_app_process_action
+ .text.memset   0x0000000008003b9c       0x10 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-memset.o)
+                0x0000000008003b9c                memset
+ .text          0x0000000008003bac       0x10 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-strlen.o)
+                0x0000000008003bac                strlen
+                0x0000000008003bbc                linker_code_end = .
  *(.init)
- .init          0x0000000008003bb4        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crti.o
-                0x0000000008003bb4                _init
- .init          0x0000000008003bb8        0x8 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtn.o
+ .init          0x0000000008003bbc        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crti.o
+                0x0000000008003bbc                _init
+ .init          0x0000000008003bc0        0x8 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtn.o
  *(.fini)
- .fini          0x0000000008003bc0        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crti.o
-                0x0000000008003bc0                _fini
- .fini          0x0000000008003bc4        0x8 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtn.o
+ .fini          0x0000000008003bc8        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crti.o
+                0x0000000008003bc8                _fini
+ .fini          0x0000000008003bcc        0x8 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1657,109 +1657,109 @@ LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/g
  *(.dtors)
  *(.rodata*)
  .rodata.sl_button_btn0
-                0x0000000008003bcc       0x18 vscode-build/obj/autogen/sl_simple_button_instances.o
-                0x0000000008003bcc                sl_button_btn0
+                0x0000000008003bd4       0x18 vscode-build/obj/autogen/sl_simple_button_instances.o
+                0x0000000008003bd4                sl_button_btn0
  .rodata.sl_button_btn1
-                0x0000000008003be4       0x18 vscode-build/obj/autogen/sl_simple_button_instances.o
-                0x0000000008003be4                sl_button_btn1
- .rodata        0x0000000008003bfc       0x1c vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
- .rodata        0x0000000008003c18       0x14 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/sl_memlcd_display.o
- .rodata        0x0000000008003c2c       0x1c vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_usart/sl_mx25_flash_shutdown.o
+                0x0000000008003bec       0x18 vscode-build/obj/autogen/sl_simple_button_instances.o
+                0x0000000008003bec                sl_button_btn1
+ .rodata        0x0000000008003c04       0x1c vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/memlcd_usart/sl_memlcd_spi.o
+ .rodata        0x0000000008003c20       0x14 vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/memlcd/src/sl_memlcd_display.o
+ .rodata        0x0000000008003c34       0x1c vscode-build/obj/gecko_sdk_4.3.1/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_usart/sl_mx25_flash_shutdown.o
  .rodata.GPIO_PinInGet.str1.1
-                0x0000000008003c48       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x0000000008003c50       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
  .rodata.sl_simple_button_init.str1.1
-                0x0000000008003c75       0x3e vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
+                0x0000000008003c7d       0x3e vscode-build/obj/gecko_sdk_4.3.1/platform/driver/button/src/sl_simple_button.o
  .rodata.HFRCODPLLDevinfoGet.str1.1
-                0x0000000008003cb3       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
+                0x0000000008003cbb       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_cmu.o
  .rodata.CORE_NvicMaskSetIRQ.str1.1
-                0x0000000008003cdf       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
+                0x0000000008003ce7       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_core.o
  .rodata.EMU_VScaleEM01.str1.1
-                0x0000000008003d0c       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_emu.o
+                0x0000000008003d14       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_emu.o
  .rodata.BUS_RegBitWrite.str1.1
-                0x0000000008003d38       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
+                0x0000000008003d40       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
  .rodata.GPIO_PinOutSet.str1.1
-                0x0000000008003d64       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
+                0x0000000008003d6c       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
  .rodata.GPIO_ExtIntConfig.str1.1
-                0x0000000008003d64       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
+                0x0000000008003d6c       0x2d vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_gpio.o
  .rodata.PRS_ConvertToSyncSource.str1.1
-                0x0000000008003d91       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_prs.o
+                0x0000000008003d99       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_prs.o
  .rodata.USART_BaudrateAsyncSet.str1.1
-                0x0000000008003dbd       0x2e vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
- *fill*         0x0000000008003deb        0x1 
+                0x0000000008003dc5       0x2e vscode-build/obj/gecko_sdk_4.3.1/platform/emlib/src/em_usart.o
+ *fill*         0x0000000008003df3        0x1 
  .rodata.GLIB_FontNarrow6x8
-                0x0000000008003dec       0x10 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_narrow_6x8.o
-                0x0000000008003dec                GLIB_FontNarrow6x8
+                0x0000000008003df4       0x10 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_narrow_6x8.o
+                0x0000000008003df4                GLIB_FontNarrow6x8
  .rodata.GLIB_FontNarrow6x8PixMap
-                0x0000000008003dfc      0x320 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_narrow_6x8.o
+                0x0000000008003e04      0x320 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_narrow_6x8.o
  .rodata.GLIB_FontNormal8x8
-                0x000000000800411c       0x10 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_normal_8x8.o
-                0x000000000800411c                GLIB_FontNormal8x8
+                0x0000000008004124       0x10 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_normal_8x8.o
+                0x0000000008004124                GLIB_FontNormal8x8
  .rodata.GLIB_FontNormal8x8PixMap
-                0x000000000800412c      0x320 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_normal_8x8.o
+                0x0000000008004134      0x320 vscode-build/obj/gecko_sdk_4.3.1/platform/middleware/glib/fonts/glib_font_normal_8x8.o
  .rodata.sl_sysrtc_init_group.str1.1
-                0x000000000800444c       0x3c vscode-build/obj/gecko_sdk_4.3.1/platform/peripheral/src/peripheral_sysrtc.o
- .rodata        0x0000000008004488        0x7 vscode-build/obj/gecko_sdk_4.3.1/platform/service/device_init/src/sl_device_init_dcdc_s2.o
- *fill*         0x000000000800448f        0x1 
- .rodata        0x0000000008004490       0x28 vscode-build/obj/gecko_sdk_4.3.1/platform/service/device_init/src/sl_device_init_hfxo_s2.o
- .rodata        0x00000000080044b8       0x14 vscode-build/obj/gecko_sdk_4.3.1/platform/service/device_init/src/sl_device_init_lfxo_s2.o
+                0x0000000008004454       0x3c vscode-build/obj/gecko_sdk_4.3.1/platform/peripheral/src/peripheral_sysrtc.o
+ .rodata        0x0000000008004490        0x7 vscode-build/obj/gecko_sdk_4.3.1/platform/service/device_init/src/sl_device_init_dcdc_s2.o
+ *fill*         0x0000000008004497        0x1 
+ .rodata        0x0000000008004498       0x28 vscode-build/obj/gecko_sdk_4.3.1/platform/service/device_init/src/sl_device_init_hfxo_s2.o
+ .rodata        0x00000000080044c0       0x14 vscode-build/obj/gecko_sdk_4.3.1/platform/service/device_init/src/sl_device_init_lfxo_s2.o
  .rodata.process_timer_irq.str1.1
-                0x00000000080044cc       0x40 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer.o
+                0x00000000080044d4       0x40 vscode-build/obj/gecko_sdk_4.3.1/platform/service/sleeptimer/src/sl_sleeptimer.o
  .rodata.sl_udelay_wait.str1.1
-                0x000000000800450c       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/service/udelay/src/sl_udelay.o
+                0x0000000008004514       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/service/udelay/src/sl_udelay.o
  .rodata.memlcd_app_init.str1.1
-                0x0000000008004544       0x49 vscode-build/obj/memlcd_app.o
+                0x000000000800454c       0x49 vscode-build/obj/memlcd_app.o
  .rodata.sl_button_on_change.str1.1
-                0x000000000800458d        0xd vscode-build/obj/memlcd_app.o
- *fill*         0x000000000800459a        0x2 
+                0x0000000008004595        0xd vscode-build/obj/memlcd_app.o
+ *fill*         0x00000000080045a2        0x2 
  .rodata._global_impure_ptr
-                0x000000000800459c        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-impure.o)
-                0x000000000800459c                _global_impure_ptr
+                0x00000000080045a4        0x4 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-impure.o)
+                0x00000000080045a4                _global_impure_ptr
  *(.eh_frame*)
- .eh_frame      0x00000000080045a0        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .eh_frame      0x00000000080045a8        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.glue_7         0x00000000080045a0        0x0
- .glue_7        0x00000000080045a0        0x0 linker stubs
+.glue_7         0x00000000080045a8        0x0
+ .glue_7        0x00000000080045a8        0x0 linker stubs
 
-.glue_7t        0x00000000080045a0        0x0
- .glue_7t       0x00000000080045a0        0x0 linker stubs
+.glue_7t        0x00000000080045a8        0x0
+ .glue_7t       0x00000000080045a8        0x0 linker stubs
 
-.vfp11_veneer   0x00000000080045a0        0x0
- .vfp11_veneer  0x00000000080045a0        0x0 linker stubs
+.vfp11_veneer   0x00000000080045a8        0x0
+ .vfp11_veneer  0x00000000080045a8        0x0 linker stubs
 
-.v4_bx          0x00000000080045a0        0x0
- .v4_bx         0x00000000080045a0        0x0 linker stubs
+.v4_bx          0x00000000080045a8        0x0
+ .v4_bx         0x00000000080045a8        0x0 linker stubs
 
-.iplt           0x00000000080045a0        0x0
- .iplt          0x00000000080045a0        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.iplt           0x00000000080045a8        0x0
+ .iplt          0x00000000080045a8        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000000080045a0                __exidx_start = .
+                0x00000000080045a8                __exidx_start = .
 
-.ARM.exidx      0x00000000080045a0        0x8
+.ARM.exidx      0x00000000080045a8        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00000000080045a0        0x8 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/crt0.o
+ .ARM.exidx     0x00000000080045a8        0x8 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/crt0.o
                                          0x10 (size before relaxing)
- .ARM.exidx     0x00000000080045a8        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x00000000080045b0        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_udivmoddi4.o)
                                           0x8 (size before relaxing)
-                0x00000000080045a8                __exidx_end = .
+                0x00000000080045b0                __exidx_end = .
 
-.rel.dyn        0x00000000080045a8        0x0
- .rel.iplt      0x00000000080045a8        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.rel.dyn        0x00000000080045b0        0x0
+ .rel.iplt      0x00000000080045b0        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.copy.table     0x00000000080045a8        0xc
-                0x00000000080045a8                . = ALIGN (0x4)
-                0x00000000080045a8                __copy_table_start__ = .
-                0x00000000080045a8        0x4 LONG 0x80045b4 __etext
-                0x00000000080045ac        0x4 LONG 0x20001000 __data_start__
-                0x00000000080045b0        0x4 LONG 0x28 ((__data_end__ - __data_start__) / 0x4)
-                0x00000000080045b4                __copy_table_end__ = .
+.copy.table     0x00000000080045b0        0xc
+                0x00000000080045b0                . = ALIGN (0x4)
+                0x00000000080045b0                __copy_table_start__ = .
+                0x00000000080045b0        0x4 LONG 0x80045bc __etext
+                0x00000000080045b4        0x4 LONG 0x20001000 __data_start__
+                0x00000000080045b8        0x4 LONG 0x28 ((__data_end__ - __data_start__) / 0x4)
+                0x00000000080045bc                __copy_table_end__ = .
 
-.zero.table     0x00000000080045b4        0x0
-                0x00000000080045b4                . = ALIGN (0x4)
-                0x00000000080045b4                __zero_table_start__ = .
-                0x00000000080045b4                __zero_table_end__ = .
-                0x00000000080045b4                __etext = .
+.zero.table     0x00000000080045bc        0x0
+                0x00000000080045bc                . = ALIGN (0x4)
+                0x00000000080045bc                __zero_table_start__ = .
+                0x00000000080045bc                __zero_table_end__ = .
+                0x00000000080045bc                __etext = .
                 0x0000000020000000                . = ORIGIN (RAM)
 
 .stack          0x0000000020000000     0x1000
@@ -1773,7 +1773,7 @@ LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/g
 .noinit
  *(.noinit*)
 
-.data           0x0000000020001000       0xa0 load address 0x00000000080045b4
+.data           0x0000000020001000       0xa0 load address 0x00000000080045bc
                 0x0000000020001000                . = ALIGN (0x4)
                 0x0000000020001000                __data_start__ = .
  *(vtable)
@@ -1831,10 +1831,10 @@ LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/g
                 0x00000000200010a0                . = ALIGN (0x4)
                 0x00000000200010a0                __data_end__ = .
 
-.igot.plt       0x00000000200010a0        0x0 load address 0x0000000008004654
+.igot.plt       0x00000000200010a0        0x0 load address 0x000000000800465c
  .igot.plt      0x00000000200010a0        0x0 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.bss            0x00000000200010a0      0xac0 load address 0x0000000008004654
+.bss            0x00000000200010a0      0xac0 load address 0x000000000800465c
                 0x00000000200010a0                . = ALIGN (0x4)
                 0x00000000200010a0                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(.bss*))
@@ -1900,10 +1900,10 @@ LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/g
                 0x000000000807e000                __main_flash_end__ = 0x807e000
 
 .internal_storage
-                0x00000000080045b4        0x0
+                0x00000000080045bc        0x0
  *(.internal_storage*)
 
-.nvm            0x00000000080045b4        0x0
+.nvm            0x00000000080045bc        0x0
  *(.simee*)
                 0x000000000807e000                linker_nvm_end = __main_flash_end__
                 0x000000000807e000                linker_nvm_begin = (linker_nvm_end - SIZEOF (.nvm))
@@ -2090,7 +2090,7 @@ LOAD linker stubs
  .comment       0x0000000000000049       0x4a vscode-build/obj/main.o
  .comment       0x0000000000000049       0x4a vscode-build/obj/memlcd_app.o
 
-.debug_info     0x0000000000000000    0x3575d
+.debug_info     0x0000000000000000    0x3576e
  .debug_info    0x0000000000000000       0x7e vscode-build/obj/app.o
  .debug_info    0x000000000000007e       0x98 vscode-build/obj/autogen/sl_board_default_init.o
  .debug_info    0x0000000000000116     0x1227 vscode-build/obj/autogen/sl_device_init_clocks.o
@@ -2136,7 +2136,7 @@ LOAD linker stubs
  .debug_info    0x0000000000034d03       0x91 vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_process_action.o
  .debug_info    0x0000000000034d94      0x16e vscode-build/obj/gecko_sdk_4.3.1/platform/service/udelay/src/sl_udelay.o
  .debug_info    0x0000000000034f02       0x9c vscode-build/obj/main.o
- .debug_info    0x0000000000034f9e      0x7bf vscode-build/obj/memlcd_app.o
+ .debug_info    0x0000000000034f9e      0x7d0 vscode-build/obj/memlcd_app.o
 
 .debug_abbrev   0x0000000000000000     0x5bd8
  .debug_abbrev  0x0000000000000000       0x51 vscode-build/obj/app.o
@@ -2326,7 +2326,7 @@ LOAD linker stubs
  .debug_ranges  0x0000000000001648       0x10 vscode-build/obj/main.o
  .debug_ranges  0x0000000000001658       0x58 vscode-build/obj/memlcd_app.o
 
-.debug_line     0x0000000000000000     0xfd4d
+.debug_line     0x0000000000000000     0xfd51
  .debug_line    0x0000000000000000       0x5e vscode-build/obj/app.o
  .debug_line    0x000000000000005e       0x8d vscode-build/obj/autogen/sl_board_default_init.o
  .debug_line    0x00000000000000eb      0x26b vscode-build/obj/autogen/sl_device_init_clocks.o
@@ -2372,7 +2372,7 @@ LOAD linker stubs
  .debug_line    0x000000000000f4a6       0xab vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_process_action.o
  .debug_line    0x000000000000f551      0x28b vscode-build/obj/gecko_sdk_4.3.1/platform/service/udelay/src/sl_udelay.o
  .debug_line    0x000000000000f7dc       0xc5 vscode-build/obj/main.o
- .debug_line    0x000000000000f8a1      0x4ac vscode-build/obj/memlcd_app.o
+ .debug_line    0x000000000000f8a1      0x4b0 vscode-build/obj/memlcd_app.o
 
 .debug_str      0x0000000000000000     0xd4bd
  .debug_str     0x0000000000000000      0x134 vscode-build/obj/app.o
@@ -2468,7 +2468,7 @@ LOAD linker stubs
  .debug_str     0x000000000000d3ff       0xbe vscode-build/obj/memlcd_app.o
                                         0x630 (size before relaxing)
 
-.debug_frame    0x0000000000000000     0x2760
+.debug_frame    0x0000000000000000     0x2768
  .debug_frame   0x0000000000000000       0x30 vscode-build/obj/app.o
  .debug_frame   0x0000000000000030       0x20 vscode-build/obj/autogen/sl_board_default_init.o
  .debug_frame   0x0000000000000050       0x28 vscode-build/obj/autogen/sl_device_init_clocks.o
@@ -2512,13 +2512,13 @@ LOAD linker stubs
  .debug_frame   0x0000000000002564       0x2c vscode-build/obj/gecko_sdk_4.3.1/platform/service/system/src/sl_system_process_action.o
  .debug_frame   0x0000000000002590       0x38 vscode-build/obj/gecko_sdk_4.3.1/platform/service/udelay/src/sl_udelay.o
  .debug_frame   0x00000000000025c8       0x28 vscode-build/obj/main.o
- .debug_frame   0x00000000000025f0       0x78 vscode-build/obj/memlcd_app.o
- .debug_frame   0x0000000000002668       0x2c /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000000000002694       0x38 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00000000000026cc       0x28 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-exit.o)
- .debug_frame   0x00000000000026f4       0x2c /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000002720       0x20 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-memset.o)
- .debug_frame   0x0000000000002740       0x20 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libnosys.a(_exit.o)
+ .debug_frame   0x00000000000025f0       0x80 vscode-build/obj/memlcd_app.o
+ .debug_frame   0x0000000000002670       0x2c /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x000000000000269c       0x38 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00000000000026d4       0x28 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000000000026fc       0x2c /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000002728       0x20 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000002748       0x20 /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libnosys.a(_exit.o)
 
 .debug_loc      0x0000000000000000     0xd1eb
  .debug_loc     0x0000000000000000       0x4b vscode-build/obj/autogen/sl_event_handler.o
